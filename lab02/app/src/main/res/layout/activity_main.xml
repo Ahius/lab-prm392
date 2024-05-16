@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="True Random Number Generator"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="#d0ccfc"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min: "
+        android:textColor="#AAAAAA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        />
+
+    <EditText
+        android:id="@+id/u_min"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/txt1"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max: "
+        android:textColor="#AAAAAA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/u_min"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        />
+
+    <EditText
+        android:id="@+id/u_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/txt2"
+        app:layout_constraintTop_toBottomOf="@+id/u_min"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/u_max"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/u_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt3"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
